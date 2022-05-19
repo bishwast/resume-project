@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# Imported jobs>views
+import jobs.views
 
+# Added path for sunil with a sunil Function
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sunil', jobs.views.sunil, name='sunil'),
 ]
