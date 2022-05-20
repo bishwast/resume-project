@@ -7,3 +7,7 @@ class Job(models.Model):
 
     # Summary section with a type field of Characters of max length of 200
     summary = models.CharField(max_length=200)
+
+    # Using summary field to describe the jobs
+    def __str__(self):
+        return self.summary

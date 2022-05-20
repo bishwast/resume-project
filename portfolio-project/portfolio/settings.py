@@ -124,6 +124,10 @@ STATIC_URL = 'static/'
 # Path below is to add static folder to the base root of any system
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_URL = 'media/'
+# Path below is to add static folder to the base root of any system
+MEDIA_ROOT = BASE_DIR
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

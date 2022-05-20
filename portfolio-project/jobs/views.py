@@ -8,3 +8,7 @@ def home(request):
     jobs = Job.objects
     # Added list of jobs above to the views to render jobs info
     return render(request, 'jobs/home.html', {'jobs': jobs})
+
+def detail(request, job_id):
+    print(job_id)
+    return render(request, 'jobs/home.html')
