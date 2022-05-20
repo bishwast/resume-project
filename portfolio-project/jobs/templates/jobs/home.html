@@ -1,1 +1,10 @@
-hello world!
+<h1>All my job</h1>
+
+  <!--Below is the special language code to create html file in django
+that can display things passed into it-->
+
+{% for job in jobs.all %}
+
+{{ job.summary }}
+
+{% endfor %}
