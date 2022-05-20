@@ -11,3 +11,4 @@ class Job(models.Model):
     # Using summary field to describe the jobs
     def __str__(self):
         return self.summary
+        
