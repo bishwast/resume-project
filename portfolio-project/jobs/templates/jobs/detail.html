@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Sunil Tiwari</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+  </head>
+
+  <body>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Job Detail</h1>
+
+        <p class="lead text-muted">{{ job.summary }}</p>
+
+        <p>
+          <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+          <a href="https://www.linkedin.com/in/sunil-tiwari-708630173" target="_blank" class="btn btn-primary my-2">View my LinkedIn Profile</a>
+        </p>
+
+        <img src="{{ job.image.url }}" alt="profilePic" height=300>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="{% static 'jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+  </body>
+</html>
